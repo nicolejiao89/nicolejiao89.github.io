@@ -1,7 +1,7 @@
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio by Nicole Jiao!
 
-> this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
+> This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
 ![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/varadbhogayata.github.io) 
 ![GitHub forks](https://img.shields.io/github/forks/varadbhogayata/varadbhogayata.github.io)
