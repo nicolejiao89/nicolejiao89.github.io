@@ -76,15 +76,15 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 #### Activity 1
 ![Screenshot of repo](assets/readme/act1.png)
 #### Activity 2
-![Screenshot of repo](assets/readme/act2repo.png)
-![Screenshot of website](assets/readme/act2web.png)
+![Screenshot of repo](assets/readme/act2/act2repo.png)
+![Screenshot of website](assets/readme/act2/act2web.png)
 #### Activity 3
-![Screenshot of repo](assets/readme/act3repo.png)
-![Screenshot of website](assets/readme/act3web.png)
+![Screenshot of repo](assets/readme/act3/act3repo.png)
+![Screenshot of website](assets/readme/act3/act3web.png)
 #### Activity 4
-![Screenshot of repo](assets/readme/act4repo.png)
-![Screenshot of website](assets/readme/act4web.png)
+![Screenshot of repo](assets/readme/act4/act4repo.png)
+![Screenshot of website](assets/readme/act4/act4web.png)
 #### Activity 5
-![Screenshot of repo](assets/readme/act5repo.png)
-![Screenshot of website](assets/readme/act5web.png)
+![Screenshot of repo](assets/readme/act5/act5repo.png)
+![Screenshot of website](assets/readme/act5/act5web.png)
 
