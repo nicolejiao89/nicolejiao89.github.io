@@ -394,14 +394,17 @@
       <h3 class="page-title white-text teal">Projects</h3>
 
       <!-- Added Division: Recent Projects -->
-      <div id="recent" class="card-row"></div>
+      <div class="container">
+        <div class="row" id="recent"></div>
+      </div>
       <button onclick="loadMoreProjects()">Load More</button>
+
 
       <div class="container">
         <div class="row">
 
           <!-- Google Maps Project -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4" id="project1">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="music streaming app" src="/assets/img/googlemaps.png" style="height: 100%; width: 100%" class="activator" />
@@ -429,7 +432,7 @@
           </div>
 
           <!-- Catch Me If You Can Project -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4" id="project2">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/catchmeifyoucan.png" style="height: 100%; width: 100%" class="activator" />
@@ -501,7 +504,7 @@
           </div> -->
 
           <!-- Processor Project -->
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4" id="project3">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of web app" src="/assets/img/processor.png"
@@ -735,11 +738,6 @@
   </script>
 
 <script>
-  const projects = [
-    { title: "Google Maps", description: "Geographic Information System (GIS) software program." },
-    { title: "Catch Me If You Can", description: "Single/dual player game on the De1-SoC FPGA." },
-    { title: "Processor", description: "A simplified working processesor on De1-SoC FPGA." }
-  ];
 
   let visibleCount = 1; // start with the latest project
 
@@ -748,11 +746,7 @@
     container.innerHTML = ""; // clear previous content
 
     for (let i = 0; i < visibleCount && i < projects.length; i++) {
-      const p = projects[i];
-      const card = document.createElement("div");
-      card.className = "card medium";
-      card.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p>`;
-      container.appendChild(card);
+      document.getElementById(`project${i}`).style.display = "block";
     }
   }
 
