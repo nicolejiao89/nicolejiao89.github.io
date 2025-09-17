@@ -70,3 +70,21 @@ To view a live example, **[click here](https://varadbhogayata.github.io/)**
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+
+## Screenshots
+
+#### Activity 1
+![Screenshot of repo](assets/readme/act1.png)
+#### Activity 2
+![Screenshot of repo](assets/readme/act2repo.png)
+![Screenshot of website](assets/readme/act2web.png)
+#### Activity 3
+![Screenshot of repo](assets/readme/act3repo.png)
+![Screenshot of website](assets/readme/act3web.png)
+#### Activity 4
+![Screenshot of repo](assets/readme/act4repo.png)
+![Screenshot of website](assets/readme/act4web.png)
+#### Activity 5
+![Screenshot of repo](assets/readme/act5repo.png)
+![Screenshot of website](assets/readme/act5web.png)
+
