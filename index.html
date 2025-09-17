@@ -395,8 +395,10 @@
 
       <!-- Added Division: Recent Projects -->
       <div id="recent" class="card-row"></div>
-      <button id="loadmore" onclick="loadMoreProjects()">Load More</button>
-
+      <div class="button-wrapper">
+        <button id="loadmore" onclick="loadMoreProjects()">Load More</button>
+      </div>
+      
       <div class="container">
         <div class="row">
 
@@ -762,6 +764,7 @@
     for (let i = 0; i < visibleCount && i < projects.length; i++) {
       const p = projects[i];
       const item = document.createElement("div");
+      item.className = "project-item"; 
       item.innerHTML = `
         <h3 class="project-title">${p.title}</h3>
         <img src="${p.img}" alt="${p.title}" style="width:200px; height:auto;">
