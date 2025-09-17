@@ -832,66 +832,30 @@
     })
   </script>
 
-  <script>
+  <!-- <script>
     document.getElementById("showMoreBtn").addEventListener("click", () => {
       document.querySelectorAll(".col.hidden").forEach(card => {
         card.classList.remove("hidden");
       });
       document.getElementById("showMoreBtn").style.display = "none"; // hide the button after showing
     });
+  </script> -->
+
+  <script>
+    const hiddenCards = document.querySelectorAll(".col.hidden");
+    const showBtn = document.getElementById("showMoreBtn");
+    let index = 0;
+
+    showBtn.addEventListener("click", () => {
+      if (index < hiddenCards.length) {
+        hiddenCards[index].classList.remove("hidden");
+        index++;
+        if (index === hiddenCards.length) {
+          showBtn.style.display = "none"; // hide button after last card is shown
+        }
+      }
+    });
   </script>
-
-<!-- 
-<script>
-  const projects = [
-    {
-      title: "Google Maps",
-      img: "/assets/img/googlemaps.png",
-      description: "Geographic Information System (GIS) software program"
-    },
-    {
-      title: "Catch Me If You Can Game",
-      img: "/assets/img/catchmeifyoucan.png",
-      description: "Single/dual player game on the De1-SoC FPGA"
-    },
-    {
-      title: "Processor",
-      img: "/assets/img/processor.png",
-      description: "A simplified working processor on De1-SoC FPGA"
-    }
-  ];
-
-  let visibleCount = 1; // start with the latest project
-
-  function displayProjects() {
-    const container = document.getElementById("recent");
-    container.innerHTML = ""; // clear previous content
-
-    for (let i = 0; i < visibleCount && i < projects.length; i++) {
-      const p = projects[i];
-      const item = document.createElement("div");
-      item.className = "project-item"; 
-      item.innerHTML = `
-        <h3 class="project-title">${p.title}</h3>
-        <img src="${p.img}" alt="${p.title}" style="width:200px; height:auto;">
-        <p>${p.description}</p>
-      `;
-      container.appendChild(item);
-    }
-  }
-
-  function loadMoreProjects() {
-    visibleCount++;
-    displayProjects();
-    if (visibleCount >= projects.length) {
-      document.getElementById("loadmore").style.display = "none";
-    }
-  }
-
-  // initial load: only latest project
-  displayProjects();
-</script> -->
-
 
 </body>
 
