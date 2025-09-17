@@ -562,6 +562,12 @@ small {
   background-color: #005380 !important;
 }
 
+.project-title {
+  color: #005380 ;      
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
 /* .teal {
   background-color: #00695c !important;
 } */
