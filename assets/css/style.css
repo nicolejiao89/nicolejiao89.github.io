@@ -562,24 +562,8 @@ small {
   background-color: #005380 !important;
 }
 
-.project-title {
-  color: #005380 ;      
-  font-size: 24px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-.project-item {
-  text-align: center;    /* centers all content inside */
-  margin: 20px auto;     /* centers the block itself */
-  max-width: 300px;      /* optional: keep it a nice width */
-}
-.project-item img {
-  display: block;        /* needed for margin:auto centering */
-  margin: 0 auto 10px;   /* centers the image */
-}
-.button-wrapper {
-  text-align: center;   /* centers the button inside */
-  margin-top: 20px;     /* optional spacing */
+.hidden {
+  display: none;
 }
 
 /* .teal {
