@@ -392,6 +392,11 @@
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
+
+      <!-- Added Division: Recent Projects -->
+      <div id="recent" class="container"></div>
+      <button id="loadmore">Load More</button>
+
       <div class="container">
         <div class="row">
 
@@ -728,6 +733,42 @@
       })
     })
   </script>
+
+<script>
+  const projects = [
+    { title: "Google Maps", description: "A personal portfolio built with HTML, CSS, and JavaScript." },
+    { title: "Catch Me If You Can", description: "A web app using OpenWeather API to display current weather." },
+    { title: "Processor", description: "A simple real-time chat app using WebSocket." }
+  ];
+
+  let visibleCount = 1; // start with the latest project
+
+  function displayProjects() {
+    const container = document.getElementById("recent");
+    container.innerHTML = ""; // clear previous content
+
+    for (let i = 0; i < visibleCount && i < projects.length; i++) {
+      const p = projects[i];
+      const projectDiv = document.createElement("div");
+      projectDiv.className = "project-card";
+      projectDiv.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p>`;
+      container.appendChild(projectDiv);
+    }
+  }
+
+  document.getElementById("loadmore").addEventListener("click", () => {
+    visibleCount++;
+    displayProjects();
+    if (visibleCount >= projects.length) {
+      document.getElementById("loadmore").style.display = "none";
+    }
+  });
+
+  // initial load: only latest project
+  displayProjects();
+</script>
+
+
 </body>
 
 </html>
